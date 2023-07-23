@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
+import * as fs from "fs";
+import * as path from "path";
 import matter from "gray-matter";
-export const runtime = 'experimental-edge';
+// export const runtime = 'experimental-edge';
 
 type Post = {
   slug: string;
@@ -9,6 +9,15 @@ type Post = {
   title: string;
   date: string;
 };
+
+export async function getServerSideProps() {
+  // `getStaticProps()` の中で `fs` を少しでも利用すれば OK
+  fs
+  path
+  return {
+    props: {}
+  }
+}
 
 const postsDirectory = path.join(process.cwd(), "content");
 

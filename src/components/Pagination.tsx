@@ -7,7 +7,7 @@ type Props = {
   perPage: number;
 };
 
-export const Pagination = ({ totalBlogs, setOffset, perPage }: Props) => {
+export const Pagination = (iconName: string) => function Pagination({ totalBlogs, setOffset, perPage }: Props) {
   const handlePageChange = (data: { selected: number }) => {
     setOffset(data.selected * perPage); // offsetを変更し、表示開始するアイテムの番号を変更
     window.scrollTo({

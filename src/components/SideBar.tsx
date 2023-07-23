@@ -12,7 +12,7 @@ import { useSelectBlogs } from "../hooks/useSelectBlogs";
 // recoil
 import { useAllTagsState } from "../atoms/allTogsAtom";
 
-export const SideBar = memo(() => {
+export const SideBar = (iconName: string) => function SideBar() {
   const { allTags } = useAllTagsState();
   const { selectTag } = useSelectBlogs();
 
@@ -66,4 +66,4 @@ export const SideBar = memo(() => {
       </List>
     </Grid>
   );
-});
+};

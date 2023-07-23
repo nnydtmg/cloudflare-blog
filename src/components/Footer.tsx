@@ -17,22 +17,22 @@ const FooterContainer = styled('div')({
   flexWrap: 'wrap',
 });
 
-export const Footer = memo(() => {
+export const Footer = (iconName: string) => function Footer() {
   return (
     <FooterContainer>
       <Grid item xs={10} md={8}>
         <Grid item sx={{ textAlign: 'center' }}>
-          <a href='https://twitter.com/napi_nami'>
+          <a href='https://twitter.com/hr0hr57'>
             <TwitterIcon sx={{ m: 1 }} />
           </a>
-          <a href='https://github.com/hinakonagao'>
+          <a href='https://github.com/nnydtmg'>
             <GitHubIcon sx={{ m: 1 }} />
           </a>
         </Grid>
         <Typography variant='body2' sx={{ textAlign: 'center', fontWeight: '200' }}>
-          © 2022 hinako blog
+        © 2022-2023 by hr0hr57.
         </Typography>
       </Grid>
     </FooterContainer>
   );
-});
+};
