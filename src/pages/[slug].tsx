@@ -6,6 +6,7 @@ import Link from 'next/link'
 import styles from "../styles/Home.module.css";
 import { getAllPosts, getPostBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
+export const runtime = 'edge';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 

@@ -2,6 +2,7 @@ import type { InferGetStaticPropsType, NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { getAllPosts } from "../lib/api";
+export const runtime = 'edge';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
