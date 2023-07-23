@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../../Theme";
 import { RecoilRoot } from "recoil";
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

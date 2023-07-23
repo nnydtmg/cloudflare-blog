@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 type Post = {
   slug: string;
