@@ -37,33 +37,34 @@ SlackでWebHookを受けられるように設定を行います。
 
 通知したいチャンネルを作成し、チャンネルの設定から、「アプリを追加する」を選択し、「Appディレクトリを表示」をクリックすると、ブラウザにSlackのアプリ設定画面が開きます。
 
-|![アプリを追加する](https://storage.googleapis.com/zenn-user-upload/e67f37bdc70f-20230307.png)|
-|:--|
+![アプリを追加する](https://storage.googleapis.com/zenn-user-upload/e67f37bdc70f-20230307.png)
 
-|![Appディレクトリを表示](https://storage.googleapis.com/zenn-user-upload/3f6568f34410-20230307.png)|
-|:--|
 
-|![アプリのビルド](https://storage.googleapis.com/zenn-user-upload/223c6a6deb4c-20230307.png)|
-|:--|
+![Appディレクトリを表示](https://storage.googleapis.com/zenn-user-upload/3f6568f34410-20230307.png)
+
+
+![アプリのビルド](https://storage.googleapis.com/zenn-user-upload/223c6a6deb4c-20230307.png)
+
 
 Create AppからNameSpace等を設定し、Webhookの許可を行います。
 
-|![アプリの作成](https://storage.googleapis.com/zenn-user-upload/07a1625d3aa9-20230307.png)|
-|:--|
 
-|![スクラッチで作成](https://storage.googleapis.com/zenn-user-upload/bace09e5bd4c-20230307.png)|
-|:--|
+![アプリの作成](https://storage.googleapis.com/zenn-user-upload/07a1625d3aa9-20230307.png)
 
-|![各種設定](https://storage.googleapis.com/zenn-user-upload/df74abb2cc10-20230307.png)|
-|:--|
+
+![スクラッチで作成](https://storage.googleapis.com/zenn-user-upload/bace09e5bd4c-20230307.png)
+
+
+![各種設定](https://storage.googleapis.com/zenn-user-upload/df74abb2cc10-20230307.png)
+
 
 「Add New Webhook to Workspace」をクリックすると、チャンネル用のURLが表示されますので、コピーしておきます。
 
-|![Webhook有効化](https://storage.googleapis.com/zenn-user-upload/92c25cc1356c-20230307.png)|
-|:--|
+![Webhook有効化](https://storage.googleapis.com/zenn-user-upload/92c25cc1356c-20230307.png)
 
-|![URL発行](https://storage.googleapis.com/zenn-user-upload/2a84421a9e24-20230307.png)|
-|:--|
+
+![URL発行](https://storage.googleapis.com/zenn-user-upload/2a84421a9e24-20230307.png)
+
 
 ## CDKプロジェクト作成
 
