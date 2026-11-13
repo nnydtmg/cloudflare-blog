@@ -76,9 +76,10 @@ const Post: NextPage<Props> = ({ post }) => {
                 <ReactMarkdown 
                   rehypePlugins={[rehypeRaw]} 
                   components={markdownComponents} 
-                  remarkPlugins={[gfm]} 
-                  children={post.content}
-                />
+                  remarkPlugins={[gfm]}
+                >
+                  {post.content}
+                </ReactMarkdown>
                 <style jsx global>{`
                   p code {
                     background-color: #eee;
